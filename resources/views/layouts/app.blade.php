@@ -70,7 +70,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16">
+    <footer class="bg-blue-900 text-white mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
@@ -94,13 +94,13 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <div class="space-y-2 text-gray-300">
-                        <p><i class="fas fa-envelope mr-2"></i>info@blogspace.com</p>
-                        <p><i class="fas fa-phone mr-2"></i>+62 123 4567 890</p>
+                        <p><i class="fas fa-envelope mr-2"></i>agnanpes1@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i>+62 85624313465</p>
                     </div>
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
                 <p class="text-gray-400">&copy; {{ date('Y') }} BlogSpace. All rights reserved.</p>
             </div>
         </div>
