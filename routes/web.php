@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\ArtisanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
@@ -42,3 +42,4 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 });
 
 URL::forceScheme('https');
+Route::get('/run-storage-link', [ArtisanController::class, 'storageLink']);
