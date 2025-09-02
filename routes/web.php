@@ -1,5 +1,7 @@
 <?php
 
+
+use App\Http\Controllers\ArtisanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
@@ -7,6 +9,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\Admin\CommentController as AdminCommentController;
+use Illuminate\Support\Facades\URL;
 
 
 // Forgot Password (Admin)
@@ -39,3 +42,4 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::resource('posts', AdminPostController::class);
     Route::delete('/comments/{comment}', [AdminCommentController::class, 'destroy'])->name('comments.destroy');
 });
+
